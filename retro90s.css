@@ -343,3 +343,59 @@ a.retro-link:hover {
     cursor: pointer;
     font-size: 16px;
 }
+
+/* === NAVIGATION === */
+.retro-nav {
+    background: #c0c0c0;
+    border: 3px ridge #808080;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px;
+}
+
+.retro-nav a {
+    background: #ffffff;
+    border: 2px outset #ffffff;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    box-shadow: 2px 2px 0px #000000;
+}
+
+.retro-nav a:active {
+    border-style: inset;
+    box-shadow: inset 2px 2px 0px #000000;
+}
+
+.retro-nav a:hover {
+    background: #d0d0d0;
+}
+
+/* === TABS === */
+.retro-tabs {
+    border-bottom: 3px ridge #808080;
+    display: flex;
+    gap: 5px;
+}
+
+.retro-tab {
+    background: #c0c0c0;
+    border: 3px ridge #808080;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.retro-tab.active {
+    background: #ffffff;
+    border-bottom: 3px solid #ffffff;
+    font-weight: bold;
+}
+
+.retro-tab:hover {
+    background: #d0d0d0;
+}

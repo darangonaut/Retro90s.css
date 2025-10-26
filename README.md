@@ -25,6 +25,8 @@ A nostalgic CSS framework that brings back the glory days of 1990s web design. P
   - Badge animations (spinning, bouncing, pulsing)
   - Starry night backgrounds
   - Ridge/groove/inset borders
+  - Navigation bar with retro buttons
+  - Tabs with switchable content (requires retro90s.js)
 
 - **Ready-to-Use Classes**
   - Layout utilities (text alignment, margins)
@@ -35,6 +37,7 @@ A nostalgic CSS framework that brings back the glory days of 1990s web design. P
 ## 🚀 Quick Start
 
 Simply include the CSS in your HTML file. The framework is self-contained with no dependencies.
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -46,6 +49,7 @@ Simply include the CSS in your HTML file. The framework is self-contained with n
         <h1 class="retro-title">Welcome to 1999!</h1>
         <button class="retro-button">Click Me!</button>
     </div>
+    <script src="retro90s.js"></script>
 </body>
 </html>
 ```
@@ -79,6 +83,14 @@ Simply include the CSS in your HTML file. The framework is self-contained with n
 - `.retro-input` - Text input with inset border
 - `.retro-textarea` - Textarea element
 - `.retro-webring` - Webring navigation component
+
+### Navigation
+- `.retro-nav` - Horizontal navigation bar with beveled buttons
+
+### Tabs
+- `.retro-tabs` - Tab bar with selectable tabs
+- `.retro-tab` - Individual tab element
+- `.retro-tab-content` - Associated tab content area (hidden/shown via JS)
 
 ## 🎯 Usage Examples
 
@@ -122,6 +134,31 @@ Simply include the CSS in your HTML file. The framework is self-contained with n
         </tr>
     </tbody>
 </table>
+```
+
+### Navigation Bar
+```html
+<nav class="retro-nav">
+    <a href="#">Home</a>
+    <a href="#">Docs</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+</nav>
+```
+
+### Tabs with JavaScript
+```html
+<div class="retro-tabs">
+    <div class="retro-tab active">Overview</div>
+    <div class="retro-tab">Examples</div>
+    <div class="retro-tab">Changelog</div>
+</div>
+
+<div id="tab-overview" class="retro-tab-content">Overview content...</div>
+<div id="tab-examples" class="retro-tab-content" style="display:none;">Examples content...</div>
+<div id="tab-changelog" class="retro-tab-content" style="display:none;">Changelog content...</div>
+
+<script src="retro90s.js"></script>
 ```
 
 ## 🌈 Color Palette
